@@ -1,0 +1,42 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sunrise Sunset Timings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sunrise Sunset Timings</h1>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Enter Location">
+      <button onclick="fetchSunriseSunsetInfo()">Search</button>
+    </div>
+    <!-- today add to all ids -->
+<div class="dataContainer">
+    <div class="result-container-today">
+      <h2>Today: <span id="locationNameToday"></span></h2>
+      <p>Sunrise Time: <span id="sunriseTimeToday"></span></p>
+      <p>Sunset Time: <span id="sunsetTimeToday"></span></p>
+      <p>Dawn Time: <span id="dawnTimeToday"></span></p>
+      <p>Dusk Time: <span id="duskTimeToday"></span></p>
+      <p>Day Length: <span id="dayLengthToday"></span></p>
+      <p>Solar Noon Time: <span id="solarNoonTimeToday"></span></p>
+      <p>Timezone: <span id="timezoneToday"></span></p>
+    </div>
+<!-- tomorrow add to all ids -->
+    <div class="result-container-tomorrow">
+      <h2>Tomorrow: <span id="locationNameTomorrow"></span></h2>
+      <p>Sunrise Time: <span id="sunriseTimeTomorrow"></span></p>
+      <p>Sunset Time: <span id="sunsetTimeTomorrow"></span></p>
+      <p>Dawn Time: <span id="dawnTimeTomorrow"></span></p>
+      <p>Dusk Time: <span id="duskTimeTomorrow"></span></p>
+      <p>Day Length: <span id="dayLengthTomorrow"></span></p>
+      <p>Solar Noon Time: <span id="solarNoonTimeTomorrow"></span></p>
+      <p>Timezone: <span id="timezoneTomorrow"></span></p>
+    </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
